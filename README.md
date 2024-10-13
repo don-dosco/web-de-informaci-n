@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -110,6 +109,7 @@
             background-color: #600000; /* Un tono más oscuro */
         }
 
+        /* Media queries para pantallas pequeñas */
         @media (max-width: 600px) {
             h1 {
                 font-size: 2em;
@@ -121,6 +121,16 @@
 
             .text {
                 font-size: 1em;
+            }
+
+            nav {
+                display: flex;
+                flex-direction: column; /* Cambia la dirección de la barra de navegación */
+                align-items: center; /* Centra los enlaces en pantallas pequeñas */
+            }
+
+            nav a {
+                margin: 10px 0; /* Espaciado vertical entre enlaces */
             }
         }
     </style>
